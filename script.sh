@@ -1,5 +1,9 @@
 #bin/bash!
 
+# Assylzhan Sailaubek
+# asylzhan339346@gmail.com
+# telegram: @nobilisanima
+
 # Task 1
 echo -e "\n###########################################################################"
 mkdir -p task1/MyDirectory
