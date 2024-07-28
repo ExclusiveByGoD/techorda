@@ -20,10 +20,7 @@ source_dir="task2/folder1"
 touch "$source_dir"/file1.txt "$source_dir"/file2.pdf "$source_dir"/file3.doc "$source_dir"/file4.jpg "$source_dir"/file5.txt "$source_dir"/file6.sh "$source_dir"/file7.py "$source_dir"/file8.txt "$source_dir"/file9.pdf
 target_dir="task2/folder2"
 touch "$target_dir"/file0.txt "$target_dir"/file10.doc
-before_copy=$(ls "$target_dir"/*.txt 2>/dev/null)
-cp "$source_dir"/*.txt "$target_dir"
-after_copy=$(ls "$target_dir"/*.txt 2>/dev/null)
-comm -13 <(echo "$before_copy") <(echo "$after_copy") | sort
+cp -v "$source_dir"/*.txt "$target_dir"
 
 
 # Task 3
